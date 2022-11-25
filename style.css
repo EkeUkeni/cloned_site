@@ -15,26 +15,25 @@ body {
 ul {
     list-style-type: none;
 }
+h1 {
+    font-size: 55px
+}
+h2 {
+    font-size: 30px;
+}
 h3 {
-    font-size: 18px;
+    font-size: 20px;
 }
 .wrappper {
     text-align: center;
     justify-content: center;
 }
 .first-section {
-    background: linear-gradient(249deg,rgba(0, 0, 0, 0.8), 0, transparent 60%, rgba(0,0,0,.8)), url('images/netflix.JPEG'); 
+    background: linear-gradient(249deg,rgba(17, 6, 6, 0.8), 0, transparent 60%, rgba(0,0,0,.8)), url('images/netflix.JPEG'); 
     background-repeat: no-repeat;
     background-size: contain;
+    max-width: 1400px;
     height: 700px;
-}
-.header {
-    margin: 0 auto;
-    max-width: 650px;
-    padding: 5px 0;
-    position: relative;
-    text-align: center;
-
 }
 .nav {
     display: flex;
@@ -47,34 +46,49 @@ h3 {
     border: 10px solid red;
     border-radius: 4px;
 }
-.header h1 .header h2 {
-    margin: 0 auto;
-    max-width: 640px;
+.header {
+    position: relative;
+    top: 180px;
+    left: 210px;
+    width: 800px;
+    line-height: 3.8px;
 }
-.emailfield {
+.header h1,
+.header h2 {
     display: flex;
-    color: white;
-    width: auto;
+    justify-content: center;
+    
 }
-.emailtext1 {
-    width: 65%;
-    padding: 17px 15px;
+
+.email-container {
+    border: 1px solid none;
+    padding: 15px 120px;
+    border-radius: 25px;
 }
-.emailtext {
-    width: 55%;
-    padding: 17px 15px;
+.email-holder {
+    display: flex;
+    justify-content: center;
+    
 }
-.getstarted {
-    font-size: 18p;
-    padding-left: 50px;
+.email-holder input{
+    border: 1px none none;
+    padding: 5px 150px;
+    outline: none;
+}
+.email-holder button{
     background-color: red;
+    color: white;
+    border: 1px solid red;
+    padding: 5px 60px;
+    font-size: 20px;
 }
+
 
  /* style for section two */
  .second-section{
     display: flex;
     justify-content: center;
-    margin-top: 300px;
+    margin-top: 20px;
  }
  .txt-content {
     width: 650px;
@@ -130,41 +144,27 @@ video {
 
     /* style for section six */
 
-.detail-content {
-    display: flex;
-    border: 2px outset black;
-    justify-content: space-between;
-    gap: 710px;
-} 
-.summary1,
-.summary2,
-.summary3,
-.summary4,
-.summary5,
-.summary6 {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
+.details-content {
+    font: 16px "Open Sans", Calibri, sans-serif;
+    width: 620px;
+    border: 2px solid black;
 }
-.summary1 {
-    gap: 40px;
-}
-.summary2 {
-    gap: 670px;
-}
-.summary3 {
-    gap: 700px;
-}
-.summary4 {
-    gap: 575px;
-}
-.summary5 {
-    gap: 628px;
-}
-.summary6 {
-    gap: 580px;
-}
-    /* style for section seven */
+  
+.details-content > summary {
+    padding: 2px 6px;
+    width: 15em;
+    background-color: rgb(23, 20, 20);
+    border: 10px;
+    box-shadow: 3px 3px 4px black;
+    list-style: none;
+  }
+  .details-content > p {
+    border-radius: 0 0 10px 10px;
+    background-color: #ddd;
+    padding: 2px 6px;
+    margin: 0;
+    box-shadow: 3px 3px 4px black;
+  }
 .footer {
     display: flex;
     justify-content: space-around; 
